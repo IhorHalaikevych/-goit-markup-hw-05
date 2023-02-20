@@ -725,12 +725,10 @@ letter-spacing: 0.02em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  
+  margin-left: auto; 
 }
 .is-hidden{
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
 }
