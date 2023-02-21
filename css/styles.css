@@ -425,18 +425,18 @@ gap: 24px;
   align-items: center;
   justify-content: center;
   color: var(--customers-icon);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
-
-.customers-icon{
-  fill:currentColor;
 }
 .customers-link:hover {
   border-color:var(--primary-pressed-state);
   color: var(--primary-pressed-state);
   
 }
+.customers-icon{
+  fill:currentColor;
+}
+
 
 
 
@@ -617,7 +617,6 @@ margin-right: 0px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .filter-link:is(:hover, :focus){
-    border: 0.5px solid var(--filter-selectors-bg);
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 
@@ -655,10 +654,8 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   background-color: var(--primary-brand);
   height: 100%;
   transform: translateY(100%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
-
 }
 
 .photo-sign-footer{
@@ -731,7 +728,7 @@ letter-spacing: 0.02em;
   margin-left: auto; 
   cursor: pointer;
   background-color:var(--filter-selectors-borders);
-  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close:is(:hover, :focus){
   background-color:var(--primary-pressed-state);
